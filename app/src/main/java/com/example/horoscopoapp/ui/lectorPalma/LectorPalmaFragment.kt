@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.horoscopoapp.databinding.FragmentLectorPalmaBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LectorPalmaFragment : Fragment() {
 
     private var _binding: FragmentLectorPalmaBinding? = null
