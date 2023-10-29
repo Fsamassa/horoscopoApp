@@ -1,5 +1,6 @@
 package com.example.horoscopoapp.data.network
 
+import com.example.horoscopoapp.BuildConfig.BASE_URL
 import com.example.horoscopoapp.data.RepositorioImpl
 import com.example.horoscopoapp.data.core.interceptor.AuthInterceptor
 import com.example.horoscopoapp.domain.Repositorio
@@ -22,7 +23,7 @@ object NetworkModule {
     fun provideRetrofit(okHttpClient: OkHttpClient):Retrofit{
         return Retrofit
             .Builder()
-            .baseUrl("https://newastro.vercel.app/")
+            .baseUrl(BASE_URL)
             .client(okHttpClient)    // <- Interceptor
             .addConverterFactory(GsonConverterFactory.create())
             .build()
