@@ -1,18 +1,106 @@
 package com.example.horoscopoapp.ui.suerte
 
+import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AlphaAnimation
+import android.view.animation.Animation
+import android.view.animation.Animation.AnimationListener
+import android.view.animation.AnimationUtils
+import android.view.animation.DecelerateInterpolator
+import androidx.core.animation.doOnEnd
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import com.example.horoscopoapp.R
 import com.example.horoscopoapp.databinding.FragmentSuerteBinding
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.Objects
+import java.util.Random
 
 @AndroidEntryPoint
 class SuerteFragment : Fragment() {
 
     private var _binding: FragmentSuerteBinding? = null
     private val binding get() = _binding!!
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        initUI()
+
+    }
+
+    private fun initUI() {
+        initListeners()
+    }
+
+    private fun initListeners() {
+        binding.ivRuleta.setOnClickListener {girarRuleta()}
+    }
+
+    private fun girarRuleta() {
+        val random = Random()
+        val grados = random.nextInt(1440) + 360
+        val animator = ObjectAnimator.ofFloat(binding.ivRuleta, View.ROTATION, 0f, grados.toFloat())
+        animator.duration = 2000
+        animator.interpolator = DecelerateInterpolator()
+        animator.doOnEnd { deslizarCarta() }
+        animator.start()
+    }
+
+    private fun deslizarCarta() {
+        val slideUpAnimation = AnimationUtils.loadAnimation(requireContext(), R.anim.slide_up)
+
+        slideUpAnimation.setAnimationListener(object : Animation.AnimationListener{
+            override fun onAnimationStart(p0: Animation?) {
+                binding.ivCartaElegida.isVisible = true
+            }
+            override fun onAnimationEnd(p0: Animation?) {
+                agrandarCarta()
+            }
+            override fun onAnimationRepeat(p0: Animation?) { }
+        })
+        binding.ivCartaElegida.startAnimation(slideUpAnimation)
+
+    }
+
+    private fun agrandarCarta() {
+        val growAnimation = AnimationUtils.loadAnimation(requireContext(), R.anim.agrandar_carta)
+
+        growAnimation.setAnimationListener(object: Animation.AnimationListener{
+            override fun onAnimationStart(p0: Animation?) {}
+            override fun onAnimationEnd(p0: Animation?) {
+                binding.ivCartaElegida.isVisible = false
+                mostrarPrediccionView()
+            }
+
+            override fun onAnimationRepeat(p0: Animation?) {}
+        })
+        binding.ivCartaElegida.startAnimation(growAnimation)
+    }
+
+    private fun mostrarPrediccionView() {
+        val desaparecerAnimacion = AlphaAnimation(1.0f, 0.0f)
+        desaparecerAnimacion.duration = 200
+
+        val aparecerAnimacion = AlphaAnimation(0.0f, 1.0f)
+        aparecerAnimacion.duration = 1000
+
+        desaparecerAnimacion.setAnimationListener(object : Animation.AnimationListener{
+            override fun onAnimationStart(p0: Animation?) {}
+            override fun onAnimationEnd(p0: Animation?) {
+                binding.preview.isVisible = false
+                binding.prediccion.isVisible = true
+
+            }
+            override fun onAnimationRepeat(p0: Animation?) {}
+        })
+
+        binding.preview.startAnimation(desaparecerAnimacion)
+        binding.prediccion.startAnimation(aparecerAnimacion)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

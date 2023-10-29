@@ -32,4 +32,7 @@
     <string name="Aquarius">Aquarius</string>
     <string name="Pisces">Piscis</string>
 
+    <!--  -->
+    <string name="compartir">Compartir</string>
+
 </resources>
