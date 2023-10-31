@@ -6,7 +6,7 @@
     <!-- Botones de la barra -->
     <string name="horoscopo">Horóscopo</string>
     <string name="suerte">Suerte</string>
-    <string name="lector_mano">Lector mano</string>
+    <string name="lector_mano">Lector palma</string>
 
     <!-- Signos zodiacales -->
     <string name="aries">Aries</string>
