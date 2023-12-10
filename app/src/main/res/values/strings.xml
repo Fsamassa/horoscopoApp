@@ -33,27 +33,27 @@
     <string name="Pisces">Piscis</string>
 
     <!-- Fechas Signos zodiacales -->
-    <string name="rango_aries">"21 Marzo - 20 de Abril"</string>
-    <string name="rango_tauro">"21 Abril - 21 de Mayo"</string>
-    <string name="rango_geminis">"22 Mayo - 21 de Junio"</string>
-    <string name="rango_cancer">"22 Junio - 23 de Julio"</string>
-    <string name="rango_leo">"24 Julio - 23 de Agosto"</string>
-    <string name="rango_virgo">"24 Agosto - 23 de Septiembre"</string>
-    <string name="rango_libra">"24 Septiembre - 23 de Octubre"</string>
-    <string name="rango_escorpio">"24 Octubre - 22 de Noviembre"</string>
-    <string name="rango_sagitario">"23 Noviembre - 22 de Diciembre"</string>
-    <string name="rango_capricornio">"23 Diciembre - 20 de Enero"</string>
-    <string name="rango_aquario">"21 Enero - 19 de Febrero"</string>
-    <string name="rango_piscis">"20 Febrero - 20 de Marzo"</string>
+    <string name="rango_aries">"21 Mar. - 20 de Abr."</string>
+    <string name="rango_tauro">"21 Abr. - 21 de May."</string>
+    <string name="rango_geminis">"22 May. - 21 de Jun."</string>
+    <string name="rango_cancer">"22 Jun. - 23 de Jul."</string>
+    <string name="rango_leo">"24 Jul. - 23 de Ago."</string>
+    <string name="rango_virgo">"24 Ago. - 23 de Sep."</string>
+    <string name="rango_libra">"24 Sep. - 23 de Oct."</string>
+    <string name="rango_escorpio">"24 Oct. - 22 de Nov."</string>
+    <string name="rango_sagitario">"23 Nov. - 22 de Dic."</string>
+    <string name="rango_capricornio">"23 Dic. - 20 de Ene."</string>
+    <string name="rango_aquario">"21 Ene. - 19 de Feb."</string>
+    <string name="rango_piscis">"20 Feb. - 20 de Mar."</string>
 
     <!--  -->
     <string name="compartir">Compartir</string>
 
-    <!-- Fechas Signos zodiacales -->
-    <string name="suerte_0">"A new opportunity will bring unexpected success your way."</string>
-    <string name="suerte_1">"You'll meet someone who will change your life for the better."</string>
-    <string name="suerte_2">"An exciting journey awaits you in the near future."</string>
-    <string name="suerte_3">"A creative project will lead to recognition and fulfillment."</string>
+    <!-- Suerte castellano -->
+    <string name="suerte_0">"Una nueva oportunidad traerá un éxito inesperado en tu camino."</string>
+    <string name="suerte_1">"Conocerás una persona que cambiará tu vida para bien."</string>
+    <string name="suerte_2">"Un viaje excitante te espera en el futuro cercano."</string>
+    <string name="suerte_3">"Un proyecto creativo te llevará al reconocimiento y auto realización."</string>
     <string name="suerte_4">"You'll overcome a significant challenge and emerge stronger."</string>
     <string name="suerte_5">"Financial abundance is on the horizon; stay patient."</string>
     <string name="suerte_6">"A long-lost friend will reconnect with you soon."</string>
@@ -82,7 +82,6 @@
     <string name="suerte_29">"A challenge you face now will become a stepping stone to success."</string>
     <string name="suerte_30">"Unexpected travel plans will broaden your horizons."</string>
     <string name="suerte_31">"A surprising twist of fate will bring unexpected blessings."</string>
-
 
     <string name="luck_0">"A new opportunity will bring unexpected success your way."</string>
     <string name="luck_1">"You'll meet someone who will change your life for the better."</string>
