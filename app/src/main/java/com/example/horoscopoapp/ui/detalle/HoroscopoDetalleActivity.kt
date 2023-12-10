@@ -67,22 +67,57 @@ class HoroscopoDetalleActivity : AppCompatActivity() {
         binding.tvTituloDetalle.text = estado.signo
         binding.tvDetalle.text = estado.prediccion
 
-        val imagen = when (estado.horoscopoModel){
-            Aries -> R.drawable.detail_aries
-            Taurus -> R.drawable.detail_taurus
-            Gemini -> R.drawable.detail_gemini
-            Cancer -> R.drawable.detail_cancer
-            Leo -> R.drawable.detail_leo
-            Virgo -> R.drawable.detail_virgo
-            Libra -> R.drawable.detail_libra
-            Scorpio -> R.drawable.detail_scorpio
-            Sagittarius -> R.drawable.detail_sagittarius
-            Capricorn -> R.drawable.detail_capricorn
-            Aquarius -> R.drawable.detail_aquarius
-            Pisces -> R.drawable.detail_pisces
-        }
 
-        binding.ivDetail.setImageResource(imagen)
+        when (estado.horoscopoModel){
+            Aries -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_aries)
+                binding.tvFecha.text = getString(R.string.rango_aries)
+            }
+            Taurus -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_taurus)
+                binding.tvFecha.text = getString(R.string.rango_tauro)
+            }
+            Gemini -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_gemini)
+                binding.tvFecha.text = getString(R.string.rango_geminis)
+            }
+            Cancer -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_cancer)
+                binding.tvFecha.text = getString(R.string.rango_cancer)
+            }
+            Leo -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_leo)
+                binding.tvFecha.text = getString(R.string.rango_leo)
+            }
+            Virgo -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_virgo)
+                binding.tvFecha.text =getString(R.string.rango_virgo)
+            }
+            Libra -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_libra)
+                binding.tvFecha.text = getString(R.string.rango_libra)
+            }
+            Scorpio -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_scorpio)
+                binding.tvFecha.text = getString(R.string.rango_escorpio)
+            }
+            Sagittarius -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_sagittarius)
+                binding.tvFecha.text = getString(R.string.rango_sagitario)
+            }
+            Capricorn -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_capricorn)
+                binding.tvFecha.text = getString(R.string.rango_capricornio)
+            }
+            Aquarius -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_aquarius)
+                binding.tvFecha.text = getString(R.string.rango_aquario)
+            }
+            Pisces -> {
+                binding.ivDetail.setImageResource(R.drawable.detail_pisces)
+                binding.tvFecha.text = getString(R.string.rango_piscis)
+            }
+        }
 
     }
 }
