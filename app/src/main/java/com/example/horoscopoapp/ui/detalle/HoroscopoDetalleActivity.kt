@@ -12,6 +12,11 @@ import com.example.horoscopoapp.R
 import com.example.horoscopoapp.databinding.ActivityHoroscopoDetalleBinding
 import com.example.horoscopoapp.domain.model.HoroscopoModel
 import com.example.horoscopoapp.domain.model.HoroscopoModel.*
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.FullScreenContentCallback
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.interstitial.InterstitialAd
+import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -20,6 +25,7 @@ class HoroscopoDetalleActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHoroscopoDetalleBinding
     private val horoscopoDetalleViewModel:HoroscopoDetalleViewModel by viewModels()
+    private var interstitial: InterstitialAd? = null
 
     private val arg:HoroscopoDetalleActivityArgs by navArgs()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +33,7 @@ class HoroscopoDetalleActivity : AppCompatActivity() {
         binding = ActivityHoroscopoDetalleBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initUI()
+        initLoadInterstitial()
         horoscopoDetalleViewModel.getHoroscopo(arg.type)
 
     }
@@ -34,6 +41,20 @@ class HoroscopoDetalleActivity : AppCompatActivity() {
     private fun initUI() {
         initListeners()
         initUIState()
+    }
+    private fun initLoadInterstitial() {
+        val adRequestInter = AdRequest.Builder().build()
+
+        InterstitialAd.load(this,"ca-app-pub-3940256099942544/1033173712", adRequestInter,
+            object:InterstitialAdLoadCallback(){
+                override fun onAdLoaded(interstitialAd: InterstitialAd) {
+                    interstitial = interstitialAd
+                }
+                override fun onAdFailedToLoad(p0: LoadAdError) {
+                    interstitial = null
+                }
+            }
+        )
     }
 
     private fun initListeners() {
@@ -57,6 +78,7 @@ class HoroscopoDetalleActivity : AppCompatActivity() {
 
     private fun loadingState() {
         binding.progresBar.isVisible = true
+
     }
     private fun errorState() {
         binding.progresBar.isVisible = false
@@ -64,9 +86,15 @@ class HoroscopoDetalleActivity : AppCompatActivity() {
     private fun successState(estado: HoroscopoDetalleEstado.Success) {
 
         binding.progresBar.isVisible = false
+        binding.buttonAnuncio.isVisible = true
         binding.tvTituloDetalle.text = estado.signo
         binding.tvDetalle.text = estado.prediccion
-
+        initLoadAds()
+        binding.buttonAnuncio.setOnClickListener {
+            interstitial?.show(this)
+            initLoadInterstitial()
+            binding.buttonAnuncio.text = "¡ Muchas Gracias! (¿Otro?)" // Ponerlo en un listener despues del anuncio
+        }
 
         when (estado.horoscopoModel){
             Aries -> {
@@ -119,5 +147,9 @@ class HoroscopoDetalleActivity : AppCompatActivity() {
             }
         }
 
+    }
+    private fun initLoadAds() {
+        val adRequestBanner = AdRequest.Builder().build()
+        binding.bannerDetalle.loadAd(adRequestBanner)
     }
 }

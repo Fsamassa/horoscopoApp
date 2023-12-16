@@ -7,6 +7,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.example.horoscopoapp.R
 import com.example.horoscopoapp.databinding.ActivityMainBinding
+import com.google.android.gms.ads.AdRequest
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,7 +20,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initLoadAds()
         initUI()
+    }
+
+    private fun initLoadAds() {
+        val adRequest = AdRequest.Builder().build()
+        binding.bannerRV.loadAd(adRequest)
     }
 
     private fun initUI(){
