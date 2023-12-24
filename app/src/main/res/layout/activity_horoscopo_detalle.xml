@@ -44,7 +44,8 @@
     <com.google.android.gms.ads.AdView
         android:id="@+id/bannerDetalle"
         android:layout_width="match_parent"
-        android:layout_height="20dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
 
@@ -70,6 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
+                android:layout_margin="10dp"
                 android:textAlignment="center"
                 style="@style/Detalle"
                 tools:text="texto detalle"/>
@@ -80,6 +82,7 @@
                 android:layout_gravity="center"
                 android:textColor="@color/black"
                 android:visibility="gone"
+                android:layout_margin="20dp"
                 style="@style/Detalle"
                 android:text="¡Colabora con un anuncio!"
                 android:textSize="15sp"

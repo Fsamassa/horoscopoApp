@@ -20,7 +20,7 @@ class HoroscopoDetalleViewModel @Inject constructor(private val getPrediccionUse
     val state: StateFlow<HoroscopoDetalleEstado> = _state
     lateinit var horoscopo: HoroscopoModel
 
-    fun getHoroscopo(signo: HoroscopoModel){
+    fun getHoroscopo(signo: HoroscopoModel, idioma:String){
 
         horoscopo = signo
         viewModelScope.launch {
@@ -28,7 +28,7 @@ class HoroscopoDetalleViewModel @Inject constructor(private val getPrediccionUse
             _state.value = HoroscopoDetalleEstado.Loading
 
             // Acá dentro estoy trabajando en el hilo secundario
-            val result = withContext(Dispatchers.IO) {getPrediccionUseCase(signo.name)}
+            val result = withContext(Dispatchers.IO) {getPrediccionUseCase(signo.name,idioma)}
 
             // Acá sigo trabajando en el hilo principal
             if (result != null){

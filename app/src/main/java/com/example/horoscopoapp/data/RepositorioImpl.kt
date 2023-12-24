@@ -7,8 +7,8 @@ import com.example.horoscopoapp.domain.model.PrediccionModel
 import javax.inject.Inject
 
 class RepositorioImpl @Inject constructor(private val apiService: HoroscopoApiService):Repositorio {
-    override suspend fun getPrediccion(signo: String):PrediccionModel? {
-        runCatching{ apiService.getHoroscopo(signo, "es")}
+    override suspend fun getPrediccion(signo: String, idioma:String):PrediccionModel? {
+        runCatching{ apiService.getHoroscopo(signo, idioma)}
             .onSuccess { return it.toDomain() }
             .onFailure { Log.i("Error", "Error al intentar obtener prediccion: ${it.message}") }
 

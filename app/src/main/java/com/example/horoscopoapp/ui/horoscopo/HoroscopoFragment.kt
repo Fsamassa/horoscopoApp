@@ -43,6 +43,7 @@ class HoroscopoFragment : Fragment() {
     }
     private fun initList(){
         horoscopoAdapter = HoroscopoAdapter(onItemSelected = {
+
             val type = when(it){
                 HoroscopoInfo.Aquario -> HoroscopoModel.Aquarius
                 HoroscopoInfo.Aries -> HoroscopoModel.Aries
@@ -57,8 +58,9 @@ class HoroscopoFragment : Fragment() {
                 HoroscopoInfo.Tauro -> HoroscopoModel.Taurus
                 HoroscopoInfo.Virgo -> HoroscopoModel.Virgo
             }
+            val lang = it.idioma
             findNavController().navigate(
-                HoroscopoFragmentDirections.actionHoroscopoFragmentToHoroscopoDetalleActivity(type)
+                HoroscopoFragmentDirections.actionHoroscopoFragmentToHoroscopoDetalleActivity(type,lang)
             )
         })
 

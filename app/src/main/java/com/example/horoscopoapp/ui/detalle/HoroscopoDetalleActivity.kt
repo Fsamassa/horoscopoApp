@@ -34,7 +34,8 @@ class HoroscopoDetalleActivity : AppCompatActivity() {
         setContentView(binding.root)
         initUI()
         initLoadInterstitial()
-        horoscopoDetalleViewModel.getHoroscopo(arg.type)
+
+        horoscopoDetalleViewModel.getHoroscopo(arg.type,arg.lang)
 
     }
 

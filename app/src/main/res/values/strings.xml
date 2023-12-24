@@ -8,6 +8,10 @@
     <string name="suerte">Suerte</string>
     <string name="lector_mano">Lector palma</string>
 
+    <!-- Idiomas -->
+    <string name="español">Español</string>
+    <string name="ingles">Inglés</string>
+
     <!-- Signos zodiacales -->
     <string name="aries">Aries</string>
     <string name="tauro">Tauro</string>

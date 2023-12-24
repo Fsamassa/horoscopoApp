@@ -32,5 +32,8 @@
         <argument
             android:name="type"
             app:argType="com.example.horoscopoapp.domain.model.HoroscopoModel" />
+        <argument
+            android:name="lang"
+            app:argType="string" />
     </activity>
 </navigation>

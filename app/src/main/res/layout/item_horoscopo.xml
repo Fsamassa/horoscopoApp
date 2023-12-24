@@ -16,6 +16,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:background="@drawable/custom_fondo_item"
         android:layout_width="match_parent"
+        android:layout_margin="10dp"
         android:layout_height="match_parent">
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -46,11 +47,26 @@
             android:fontFamily="@font/henny_penny"
             android:textColor="@color/gold2"
             android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/switchIdioma"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/ivHoroscopo"
             app:layout_constraintTop_toBottomOf="@+id/tvTitulo"
             tools:text="23/11 - 22/12" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchIdioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/henny_penny"
+            android:text="Español"
+            app:thumbTint="@color/black"
+            app:trackTint="@color/gold2"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivHoroscopo"
+            app:layout_constraintTop_toBottomOf="@+id/tvRangoFecha" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

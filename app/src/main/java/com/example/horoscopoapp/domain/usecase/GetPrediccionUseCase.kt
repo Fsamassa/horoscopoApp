@@ -5,5 +5,5 @@ import javax.inject.Inject
 
 class GetPrediccionUseCase @Inject constructor(private val repositorio: Repositorio) {
 
-    suspend operator fun invoke(signo:String) = repositorio.getPrediccion(signo)
+    suspend operator fun invoke(signo:String, idioma:String) = repositorio.getPrediccion(signo,idioma)
 }
