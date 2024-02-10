@@ -16,13 +16,12 @@
         android:text="Aprende a leer tu mano"
         android:textColor="@color/heart"
         android:layout_marginTop="10dp"
-        style="@style/Titulo" />
+        android:textSize="30sp"
+        style="@style/DetalleQuiromancia" />
     <View
         android:layout_width="310dp"
         android:layout_height="1dp"
         android:layout_marginStart="50dp"/>
-
-
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -51,7 +50,8 @@
                 android:text="Consejos, tips y algo más…"
                 android:textColor="@color/heart"
                 android:textSize="20sp"
-                style="@style/Titulo"/>
+                android:textStyle="bold"
+                style="@style/DetalleQuiromancia"/>
 
             <TextView
                 android:id="@+id/tvDetalleTips"
@@ -61,7 +61,7 @@
                 android:textColor="@color/black"
                 android:text="@string/Consejos_y_tips"
                 android:textSize="15sp"
-                style="@style/Titulo"/>
+                style="@style/DetalleQuiromancia"/>
 
         </LinearLayout>
 

@@ -4,20 +4,32 @@
         <item name="android:statusBarColor">@color/secondary</item>
     </style>
 
-
-
     <style name="Theme.HoroscopoApp" parent="Base.Theme.HoroscopoApp" />
 
     <style name="Titulo">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/secondary</item>
-        <item name="android:fontFamily">@font/henny_penny</item>
+        <item name="android:fontFamily">@font/poltawski_nowy_italic_variable_font_wght</item>
         <item name="android:textSize">30sp</item>
     </style>
 
     <style name="Detalle" parent="Titulo">
         <item name="android:textStyle">normal</item>
         <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DetallePrediccionCarta" parent="Titulo">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:fontFamily">@font/protest_revolution_regular</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DetalleQuiromancia" parent="Titulo">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:fontFamily">@font/poltawski_nowy_italic_variable_font_wght</item>
         <item name="android:textSize">20sp</item>
     </style>
 
