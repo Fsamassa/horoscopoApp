@@ -274,4 +274,17 @@
         <item>Línea del Sol</item>
         <item>Líneas del Brazalete</item>
     </string-array>
+
+    <string name="Detalle_instrucciones">\n
+        Haz girar la ruleta para conocer tu fortuna \n
+        \n
+        Recuerda que solo es válida la primer carta del día…\n
+        \n
+        ¡ No hagas trampa !\n
+        \n
+        \n
+        \n
+        \n
+        &lt; ------    Girar    ------ >
+    </string>
 </resources>

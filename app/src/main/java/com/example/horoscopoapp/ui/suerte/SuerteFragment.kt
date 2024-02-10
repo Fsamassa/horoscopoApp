@@ -45,12 +45,10 @@ class SuerteFragment : Fragment() {
     private fun prepararPrediccion() {
         val suerte = randomCartasProvider.getSuerte()
         suerte?.let { suerteActual ->
-
             val textoPrediccion = getString(suerteActual.texto)
             binding.tvSuerte.text = textoPrediccion
             binding.ivCartaSuerte.setImageResource(suerteActual.imagen)
             binding.tvShare.setOnClickListener {compartirSuerte(textoPrediccion)
-
             }
         }
     }
@@ -95,6 +93,7 @@ class SuerteFragment : Fragment() {
         slideUpAnimation.setAnimationListener(object : Animation.AnimationListener{
             override fun onAnimationStart(p0: Animation?) {
                 binding.ivCartaElegida.isVisible = true
+                binding.tvInstrucciones.isVisible = false
             }
             override fun onAnimationEnd(p0: Animation?) {
                 agrandarCarta()
@@ -109,7 +108,9 @@ class SuerteFragment : Fragment() {
         val growAnimation = AnimationUtils.loadAnimation(requireContext(), R.anim.agrandar_carta)
 
         growAnimation.setAnimationListener(object: Animation.AnimationListener{
-            override fun onAnimationStart(p0: Animation?) {}
+            override fun onAnimationStart(p0: Animation?) {
+
+            }
             override fun onAnimationEnd(p0: Animation?) {
                 binding.ivCartaElegida.isVisible = false
                 mostrarPrediccionView()

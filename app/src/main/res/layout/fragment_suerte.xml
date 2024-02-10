@@ -29,7 +29,19 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             />
-
+        <TextView
+            android:id="@+id/tvInstrucciones"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            style="@style/DetallePrediccionCarta"
+            android:gravity="center"
+            android:text="@string/Detalle_instrucciones"
+            android:layout_margin="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHeight_percent="0.6"
+            />
         <ImageView
             android:id="@+id/ivCartaElegida"
             android:layout_width="60dp"
@@ -65,7 +77,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHeight_percent="0.6"/>
-
         <TextView
             android:id="@+id/tvSuerte"
             android:layout_width="0dp"
