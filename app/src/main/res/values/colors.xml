@@ -12,4 +12,18 @@
     <color name="black_alpha">#98000000</color>
 
     <color name="red">#FF0000</color>
+
+
+    <color name="info">#FFFFFF</color>
+    <color name="venus">#FF0000</color>
+    <color name="destiny">#8E0303</color>
+    <color name="head">#6EF111</color>
+    <color name="health">#FF9800</color>
+    <color name="heart">#3F51B5</color>
+    <color name="intuition">#FFE500</color>
+    <color name="life">#03A9F4</color>
+    <color name="marrige">#1FA600</color>
+    <color name="mars">#FF0000</color>
+    <color name="sun">#FFE500</color>
+    <color name="bracelete">#FF5722</color>
 </resources>

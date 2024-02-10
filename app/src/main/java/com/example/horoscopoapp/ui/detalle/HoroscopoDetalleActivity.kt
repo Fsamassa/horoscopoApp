@@ -36,7 +36,6 @@ class HoroscopoDetalleActivity : AppCompatActivity() {
         initLoadInterstitial()
 
         horoscopoDetalleViewModel.getHoroscopo(arg.type,arg.lang)
-
     }
 
     private fun initUI() {

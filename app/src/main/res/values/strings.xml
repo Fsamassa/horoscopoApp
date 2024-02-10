@@ -120,4 +120,158 @@
     <string name="luck_30">"Unexpected travel plans will broaden your horizons."</string>
     <string name="luck_31">"A surprising twist of fate will bring unexpected blessings."</string>
 
+    <!-- Titulos de quiromancia -->
+    <string name="titulo_ayuda">Consejos, tips y algo más…</string>
+    <string name="titulo_cinturon_venus">El Cinturón de Venus</string>
+    <string name="titulo_linea_destino">La Línea del Destino</string>
+    <string name="titulo_linea_cabeza">La Línea de la Cabeza</string>
+    <string name="titulo_linea_salud">La Línea de la Salud</string>
+    <string name="titulo_linea_corazon">La Línea del Corazón</string>
+    <string name="titulo_linea_intuicion">La Línea de la Intuición</string>
+    <string name="titulo_linea_vida">La Línea de la Vida</string>
+    <string name="titulo_linea_matrimonio">La Línea del Matrimonio</string>
+    <string name="titulo_linea_marte">La Línea del Marte</string>
+    <string name="titulo_linea_sol">La Línea del Sol</string>
+    <string name="titulo_linea_brazalete">Las Líneas del Brazalete</string>
+
+    <!-- Informacion de quiromancia -->
+    <string name="Consejos_y_tips">Tip 1: \n
+        Recuerda que la ilustración es una guía para que puedas identificar las lineas en tu mano.\n
+        Tip 2: \n
+        Todos tenemos manos diferentes, por lo tanto no es necesario que intentes alinear la imagen a la perfección.\n
+        Tip 3: \n
+        Cuando quieras sobreponer la imagen de la cámara puedes intentar entrecerrar la mano,\n
+        esto facilitará formar los pliegues que quieres ver.
+        ¿Qué debemos saber de la Quiromancia? \n
+        Las líneas se dividen en: principales y secundarias, cada una de ellas nos transmite la información del
+        elemento que representan. \n
+        Nos indican como fluyen los acontecimientos a lo largo de nuestra vida
+        y como nuestro pensamiento se encamina hacia determinado fin.
+        Pueden cambiar dependiendo de la forma en que se actúa, estas desaparecen o se reafirman,
+        cambian su curso o se hacenmás profundas y homogéneas. Por ello a lo largo de la vida las
+        líneas cambian, incluso pueden aparecer nuevas líneas.
+        Las líneas deben de ser firmes, homogéneas y claras; cualquier isla o rompimiento, o
+        si ésta se presenta en forma de cadena o deshilachada, alterará su valor. El curso limpio y
+        claro de una línea reafirmará el valor del monte y él de la línea misma. En general, suele
+        decirse que, cuando las líneas de la mano que forman una especie deletra M en su centro son
+        claras y precisas, sobre la persona brillan perspectivas de futuro favorables. Si las líneas
+        son confusas, discontinuas o poco visibles, ello suele considerarse un síntoma de mal augurio.
+        Las cuatro líneas que forman esa M central de la mano suelen conocerse con los nombres de
+        líneas principales. \n
+        Lineas Principales y Secundarias.\n
+        Las líneas principales indican como van a ir sucediendo los distintos acontecimientos en el
+        transcurso de nuestra vida. Ellas son: la línea de la vida, la del corazón y la de lacabeza.
+        A las líneas del destion o secundarias se les dieron el nombre de los sietes planetas tradicionales:
+        Venus, Júpiter, Saturno, Marte, Mercurio, Sol, Luna
+    </string>
+
+    <string name="Detalles_cinturon_venus">Forma parte de las líneas transversales.
+        Tiene el aspecto de línea semicircular, que puede estar cortada o no,
+        y va desde el dedo índice al meñique.
+        No aparece en todas las manos.
+        Las personas que la tienen se caracterizan por ser extrovertidos.
+        Si es de un solo trazo, significa que la persona posee relaciones
+        poco intensas con el exterior. Egocentrismo.
+        En cambio, si tiene un trazo quebrado, nos muestra una imaginación
+        mórbida e inclinación a aventuras turbias.
+    </string>
+
+    <string name="Detalles_linea_destino">También llamada Línea de la suerte, de la fortuna o de Saturno.
+        Parte de la línea del puño, cerca de línea de la vida,
+        atraviesa la cruz y acaba en el llamado Monte de Saturno.
+        Esta línea está íntimamente ligada, según la tradición quiromántica, al destino de cada persona.
+        Si es recta y prolongada, se cree que indica capacidad de superar obstáculos y dificultades.
+        Si es discontinua, suele interpretarse como que la persona disfrutará de una vida difícil y breve.
+        Si ésta es larga, que llega hasta al dedo de Saturno, rota, alterada por pequeñas islas parecidas
+        a habichuelas, cruzada de pequeñas líneas que hacen de puente con otras líneas principales,
+        indican serias dificultades sufridas en el curso de la vida de la persona.
+    </string>
+    <string name="Detalles_linea_cabeza">Parte también, como la línea de la vida, de la zona que hay
+        entre eldedo pulgar y el índice, y se dirige hacia el final de la llamada eminencia hipotenar.
+        Suele convenirse que, si es recta y larga, indica que la persona es inteligente y justa,
+        aunque si lo es en exceso, puede indicar también avaricia. Si es corta y discontinua,
+        se cree que indicalas cualidades contrarias. Es la más importante de la mano y nos muestra
+        la personalidad. En esta línea se comparan las dos manos, ya que la izquierda tiene que ver
+        con todo lo que heredamos y la derecha con las cualidades adquiridas.
+    </string>
+    <string name="Detalles_linea_salud">Parte del puño, cerca de la línea de la vida, y se dirige
+        hacia el llamado Monte de Mercurio. Esta línea no aparece trazada en la mayoría de las manos.
+        Cuando es recta y marcada, se cree que indica buena salud, pero si aparece retorcida y
+        discontinua, delataría enfermedades del hígado. Las facultades innatas o las posibilidades
+        vocacionales; y es no el destino inequívoco e inalterable.
+    </string>
+    <string name="Detalles_linea_corazon">Marca un trazo casi horizontal en la parte superior de la
+        palma de la mano. Por lo general, suele creerse que, si es larga, indica que la persona ha
+        gozado o gozará de una situación sentimental muy estable y feliz, mientras que, si es corta,
+        corresponde a una persona fría y de escasa afectividad, con una vida emocional limitada.
+    </string>
+    <string name="Detalles_linea_intuicion">Nace en el monte (o muy cerca) de la Luna, en forma de
+        semicírculo, ésta nos indica la intuición de las personas, que tan aptos son para desarrollar
+        las ciencias ocultas. La capacidad de ver el mundo desde una perspectiva fuera de lo establecido.
+    </string>
+    <string name="Detalles_linea_vida">Parte de la zona que hay entre el dedo pulgar y el dedo índice
+        y baja casi hasta la muñeca. Si nace más arriba del índice y la base del pulgar, bajo
+        el monte de Júpiter, revela una fuerte voluntad y perseverancia en alcanzar metas perseguidas.
+        Por el contrario, siempieza en el monte de Marte, significa que la persona corre el riesgo de
+        permanecer durante mucho tiempo antes de decidirse a actuar.
+        Cuando termina rodeando al pulgar significa apego al país natal y al hogar.
+        Cuando termina en el monte de la Luna o en su misma dirección,
+        quiere decir que la persona tiene gran fuerza de voluntad en todos sus proyectos y que nada
+        podrá detenerlo en lo que emprenda, saliendo casi siempre victorioso. Cuando termina con
+        forma de horca, habla de una dualidad, es decir que planea algo, antes de planear el inicio
+        del proyecto, estará planeando su fin. Ésta línea ha atraído la atención de los quiromantes
+        desde los tiempos de Aristóteles. Su análisis suele resultar muy complejo ya que por lo general,
+        suele aceptarse que, si es larga y bien marcada, indica que la vida será larga y saludable,
+        también puede representar una personalidad equilibrada, con gran fuerza interior y buena salud.
+        Si es discontinua y corta, la vida será breve y falta de salud, nos señala una persona que
+        posee poca vitalidad, que le cuesta enfrentar los obstáculos que la vida le presenta.
+        También podrá ser una persona muy ansiosa, un tanto insegura y muy temerosa.
+        Sin embargo, la mayoría coinciden en que no habla de la duración de la existencia, ya que
+        ésta puede sufrir modificaciones en todo momento. Sino que nos muestra el paso del tiempo o
+        algún acontecimiento importante en la vida de la persona. No obstante, con la práctica,
+        puede dársele una interpretación entre ambas teorías, ello depende de lamanera en que
+        cada persona interprete. Si va hacia adentro del monte de Venus, significa que la persona
+        tiene a nivel salud bajas defensas y poca vitalidad; cuando rodea al Monte de Venus,
+        significa todo locontrario. Si se halla marcada por un doble trazo, augura una vida especialmente
+        larga y feliz, muy protector con una muy buena predisposición ante los hechos de la vida y
+        que posee muy buena salud. Algunos quiromantes antiguos la dividían en ocho partes que
+        simbolizaban períodos de diez años, y algunos modernos han establecido incluso sistemas de
+        medición más detallados y precisos, con objeto de intuir mejor acontecimientos de la vida
+        pasada y futura de la persona. Lo que es considerado como correcto es divirse en períodos de
+        7 años, que corresponde a los ciclo de las edades, para poder determinar en qué período
+        puede llevarse a cabo un hecho.
+    </string>
+    <string name="Detalles_linea_matrimonio">Está localizada en parte externa de la palma,
+        cerca del Monte de Mercurio y está inclinada hacia ella. Simboliza las relaciones que
+        han sido importantes en nuestra vida; Si es recta es generalmente indicativade una buena
+        relación matrimonial o de un noviazgo que aguanta. Si se inclina hacia la línea del corazón
+        indica una interrupción en el matrimonio o la mala salud del esposo/a. Si se inclina hacia
+        el dedo meñique es probable que su pareja tenga una larga vida. Esta línea puede no estar
+        sola, puede haber dos o tres líneas de estas. Pero no significa que una persona tendría
+        tantos matrimonios o asuntos amorosos.
+    </string>
+    <string name="Detalles_linea_marte">Protección y apoyo a la línea de la vida; no una doble vida.
+    </string>
+    <string name="Detalles_linea_sol">Se ubica en la zona inferior de la mano, ésta nos representa
+        la mala o buena suerte que traemos, fortunas y peligros; indica el éxito de los propios
+        esfuerzos, en la adquisición de riqueza, de la política, de un proceso legal, del amor, etc.
+    </string>
+    <string name="Detalles_linea_brazalete">Se encuentra en la parte inferior de la mano, es decir
+        la canilla, estas tres líneas representan salud, dinero y amor.
+    </string>
+
+    <string-array name="lineas_mano">
+        <item>Consejos, tips y algo más…</item>
+        <item>Cinturón de Venus</item>
+        <item>Línea del Destino</item>
+        <item>Línea de la Cabeza</item>
+        <item>Línea de la Salud</item>
+        <item>Línea del Corazón</item>
+        <item>Línea de la Intuición</item>
+        <item>Línea de la Vida</item>
+        <item>Línea del Matrimonio</item>
+        <item>Línea del Marte</item>
+        <item>Línea del Sol</item>
+        <item>Líneas del Brazalete</item>
+    </string-array>
 </resources>

@@ -18,7 +18,11 @@
         android:id="@+id/lectorPalmaFragment"
         android:name="com.example.horoscopoapp.ui.lectorPalma.LectorPalmaFragment"
         android:label="fragment_lector_palma"
-        tools:layout="@layout/fragment_lector_palma" />
+        tools:layout="@layout/fragment_lector_palma" >
+        <action
+            android:id="@+id/action_lectorPalmaFragment_to_quiromanciaFragment"
+            app:destination="@id/quiromanciaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/suerteFragment"
         android:name="com.example.horoscopoapp.ui.suerte.SuerteFragment"
@@ -36,4 +40,14 @@
             android:name="lang"
             app:argType="string" />
     </activity>
+    <fragment
+        android:id="@+id/quiromanciaFragment"
+        android:name="com.example.horoscopoapp.ui.lectorPalma.QuiromanciaFragment"
+        android:label="fragment_quiromancia"
+        tools:layout="@layout/fragment_quiromancia" >
+        <argument
+            android:name="tipo_linea"
+            app:argType="string" />
+    </fragment>
+
 </navigation>

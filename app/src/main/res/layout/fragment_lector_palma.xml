@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,11 +19,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+
+    <!--  android:background="@color/black_alpha" -->
     <View
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:id="@+id/background"
-        android:background="@color/black_alpha"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,13 +36,50 @@
         android:layout_height="0dp"
         android:id="@+id/ivLectorPalma"
         android:src="@drawable/palmistry"
+        android:paddingBottom="65sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:src="@drawable/outline_live_help_50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/info" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDropDown"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:hint="Selector de líneas"
+        app:endIconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFinder"
+        app:layout_constraintEnd_toStartOf="@+id/ivInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:startIconTint="@color/black">
 
+        <AutoCompleteTextView
+            android:id="@+id/acLineas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:dropDownWidth="wrap_content"
+            android:dropDownHeight="250dp"
+            android:inputType="none"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="Líneas de la palma"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
