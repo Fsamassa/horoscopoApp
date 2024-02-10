@@ -97,7 +97,7 @@ class LectorPalmaFragment : Fragment(), AdapterView.OnItemClickListener {
     private fun initListeners() {
         binding.ivInfo.setOnClickListener {
             val tipo_linea = "Consejos, tips y algo más…"
-            findNavController().navigate(LectorPalmaFragmentDirections.actionLectorPalmaFragmentToQuiromanciaFragment(tipo_linea))
+            findNavController().navigate(LectorPalmaFragmentDirections.actionLectorPalmaFragmentToTipsYConsejosFragment(tipo_linea))
 
         }
     }
@@ -129,7 +129,7 @@ class LectorPalmaFragment : Fragment(), AdapterView.OnItemClickListener {
                 DrawableCompat.setTint(binding.ivInfo.drawable,ContextCompat.getColor(contexto, R.color.info))
                 linea_seleccionada = "Consejos, tips y algo más…"
                 binding.ivInfo.setOnClickListener {
-                    findNavController().navigate(LectorPalmaFragmentDirections.actionLectorPalmaFragmentToQuiromanciaFragment(linea_seleccionada))
+                    findNavController().navigate(LectorPalmaFragmentDirections.actionLectorPalmaFragmentToTipsYConsejosFragment(linea_seleccionada))
                 }
             }
             "Cinturón de Venus" -> {

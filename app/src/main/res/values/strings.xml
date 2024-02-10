@@ -142,9 +142,16 @@
         Tip 3: \n
         Cuando quieras sobreponer la imagen de la cámara puedes intentar entrecerrar la mano,\n
         esto facilitará formar los pliegues que quieres ver.
-        ¿Qué debemos saber de la Quiromancia? \n
-        Las líneas se dividen en: principales y secundarias, cada una de ellas nos transmite la información del
-        elemento que representan. \n
+    </string>
+    <string name="Titulo_Info_quiromancia">
+         ¿Qué debemos saber de la Quiromancia?
+    </string>
+    <string name="Info_quiromancia">
+        La quiromancia consiste en la práctica de la evaluación del carácter o el futuro de una
+        persona por la lectura de la palma de la mano. Varias líneas y montes a las que
+        se sugieren interpretaciones por su tamaño relativo, cualidades e intersecciones.
+        Las líneas se dividen en: principales y secundarias, cada una de ellas nos transmite
+        la información del elemento que representan. \n
         Nos indican como fluyen los acontecimientos a lo largo de nuestra vida
         y como nuestro pensamiento se encamina hacia determinado fin.
         Pueden cambiar dependiendo de la forma en que se actúa, estas desaparecen o se reafirman,
@@ -158,10 +165,14 @@
         son confusas, discontinuas o poco visibles, ello suele considerarse un síntoma de mal augurio.
         Las cuatro líneas que forman esa M central de la mano suelen conocerse con los nombres de
         líneas principales. \n
-        Lineas Principales y Secundarias.\n
+    </string>
+    <string name="Titulo_Lineas_quiromancia">
+         Lineas Principales y Secundarias
+    </string>
+    <string name="Info_Lineas_quiromancia">
         Las líneas principales indican como van a ir sucediendo los distintos acontecimientos en el
-        transcurso de nuestra vida. Ellas son: la línea de la vida, la del corazón y la de lacabeza.
-        A las líneas del destion o secundarias se les dieron el nombre de los sietes planetas tradicionales:
+        transcurso de nuestra vida. Ellas son: la línea de la vida, la del corazón y la de la cabeza.
+        A las líneas del destino o secundarias se les dieron el nombre de los sietes planetas tradicionales:
         Venus, Júpiter, Saturno, Marte, Mercurio, Sol, Luna
     </string>
 

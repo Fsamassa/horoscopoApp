@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#D6D6D6"
-    tools:context=".ui.lectorPalma.QuiromanciaFragment">
+    tools:context=".ui.lectorPalma.TipsYConsejosFragment">
+
 
     <TextView
         android:id="@+id/tvTitulo"
@@ -39,28 +40,73 @@
                 android:layout_height="350dp"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/palmistry_girdle_of_venus"
+                android:src="@drawable/palmistry"
                 />
             <TextView
-                android:id="@+id/tvTituloLinea"
+                android:id="@+id/tvTituloTips"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="@string/titulo_cinturon_venus"
+                android:text="Consejos, tips y algo más…"
                 android:textColor="@color/heart"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 style="@style/DetalleQuiromancia"/>
 
             <TextView
-                android:id="@+id/tvDetalleLinea"
+                android:id="@+id/tvDetalleTips"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/black"
-                android:text="@string/Detalles_cinturon_venus"
+                android:text="@string/Consejos_y_tips"
                 android:textSize="15sp"
                 style="@style/DetalleQuiromancia"/>
+
+            <TextView
+                android:id="@+id/tvTituloQuiromancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/Titulo_Info_quiromancia"
+                android:textColor="@color/heart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                style="@style/DetalleQuiromancia"/>
+
+            <TextView
+                android:id="@+id/tvDetalleQuiromancia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text="@string/Info_quiromancia"
+                android:textSize="15sp"
+                style="@style/DetalleQuiromancia"/>
+
+            <TextView
+                android:id="@+id/tvTituloLineas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/Titulo_Lineas_quiromancia"
+                android:textColor="@color/heart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                style="@style/DetalleQuiromancia"/>
+
+            <TextView
+                android:id="@+id/tvDetalleLineas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:text="@string/Info_Lineas_quiromancia"
+                android:textSize="15sp"
+                style="@style/DetalleQuiromancia"/>
+
         </LinearLayout>
+
     </ScrollView>
+
 </LinearLayout>

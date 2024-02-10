@@ -21,7 +21,14 @@
         tools:layout="@layout/fragment_lector_palma" >
         <action
             android:id="@+id/action_lectorPalmaFragment_to_quiromanciaFragment"
-            app:destination="@id/quiromanciaFragment" />
+            app:destination="@id/quiromanciaFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_lectorPalmaFragment_to_tipsYConsejosFragment"
+            app:destination="@id/tipsYConsejosFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/slide_out_right" />
     </fragment>
     <fragment
         android:id="@+id/suerteFragment"
@@ -49,5 +56,13 @@
             android:name="tipo_linea"
             app:argType="string" />
     </fragment>
-
+    <fragment
+        android:id="@+id/tipsYConsejosFragment"
+        android:name="com.example.horoscopoapp.ui.lectorPalma.TipsYConsejosFragment"
+        android:label="fragment_tips_y_consejos"
+        tools:layout="@layout/fragment_tips_y_consejos" >
+    <argument
+        android:name="tipo_linea"
+        app:argType="string" />
+    </fragment>
 </navigation>
